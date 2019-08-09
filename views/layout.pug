@@ -1,0 +1,15 @@
+html
+  head
+    title
+      block title
+    block stylesheets
+      link(rel='stylesheet' href='/css/bootstrap.css')
+      link(rel='stylesheet' href='/css/style.css')
+  body
+    block navbar
+      include partials/navbar
+    block body
+    block footer
+    block javascripts
+      script(src='/js/jquery-3.4.1.min.js')
+      script(src='/js/bootstrap.min.js')

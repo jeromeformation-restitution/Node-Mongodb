@@ -1,0 +1,16 @@
+extends layout
+
+block body
+    .container
+        form(method="post")
+                .form-group
+                    label(for='name') Nom
+                    input#name.form-control(type='text', name='name')
+                .form-group
+                    label(for='intro') Description
+                    textarea#intro.form-control(name='intro')
+                .form-group
+                    label(for='nbIngredients') Nombre d'ingrédients
+                    input#nbIngredients.form-control(type='number', name='nbIngredients')
+                button.btn.btn-primary(type='submit') Ajouter
+
